@@ -1,5 +1,6 @@
 // Exemple d'appel API depuis un composant React
-export const saveTracking = (bottles:number, diapers:number, breastPumping:number ) => fetch('http://localhost:5000/api/tracking', {
+export const saveTracking = (bottles:number, diapers:number, breastPumping:number ) => fetch(
+  'https://mam-tracker-backend.onrender.com/api/tracking', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -12,7 +13,7 @@ export const saveTracking = (bottles:number, diapers:number, breastPumping:numbe
 // Exemple d'appel API depuis un composant React
 // frontend/src/api.ts
 export const getTracking = () => {
-  return fetch('http://localhost:5000/api/tracking', {
+  return fetch('https://mam-tracker-backend.onrender.com/api/tracking', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
